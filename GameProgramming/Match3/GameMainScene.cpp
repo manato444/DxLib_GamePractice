@@ -5,7 +5,7 @@
 
 //マクロ定義
 
-#define TIMELIMIT (3600*3)//制限時間
+#define TIMELIMIT (3600 * 3)//制限時間
 
 #define NUMBER_IMAGE_MAX (10) //数字画像数
 
@@ -172,26 +172,29 @@ void GameMainScene_Draw(void)
 	do {
 
 		DrawRotaGraph(PosX, 80, 0.5f, 0, NumberImage[tmp_level % 10], TRUE);
+
 		tmp_level /= 10;
+
 		PosX -= 30;
+
 	} while (tmp_level > 0);
 
 
-}
 
-//スコアの描画
-PosX = 620;
 
-do {
+	//スコアの描画
+	PosX = 620;
 
-	DrawRotaGraph(PosX, 160, 0.3f, 0, NumberImage[tmp_score % 10], TRUE);
-	tmp_score /= 10;
-	PosX -= 20;
+	do {
 
-} while (tmp_score > 0);
+		DrawRotaGraph(PosX, 160, 0.3f, 0, NumberImage[tmp_score % 10], TRUE);
+		tmp_score /= 10;
+		PosX -= 20;
 
-//制限時間の描画
-DrawBox(491, 469, 509, 469, -GmaeTime / 60 * 2, 0x003ff, TRUE);
+	} while (tmp_score > 0);
+
+	//制限時間の描画
+	DrawBox(491, 469, 509, 469, - GameTime / 60 * 2, 0x003ff, TRUE);
 
 }
 

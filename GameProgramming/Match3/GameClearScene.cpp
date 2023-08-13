@@ -72,7 +72,7 @@ void GameClearScene_Update(void)
 
 		if (GameClearFlag == TRUE)
 		{
-			Chage_Scene(E_GAMEMAIN);
+			Change_Scene(E_GAMEMAIN);
 		}
 
 		else

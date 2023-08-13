@@ -33,7 +33,7 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
 
 	//画面サイズの最大サイズ、カラービット数を設定
 
-	SetGraphMode(SCREEN_HEIGHT, SCREEN_WIDTH, SCREEN_COLORBIT);
+	SetGraphMode(SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_COLORBIT);
 
 
 	//Dxライブラリ初期化処理
@@ -69,7 +69,7 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
 
 	//ゲームループ
 
-	while (ProcessMessage() != D_EEROR && Input_Escape() == FALSE)
+	while (ProcessMessage() != D_ERROR && Input_Escape() == FALSE)
 	{
 		//入力制御機能更新処理
 
@@ -77,7 +77,7 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
 
 		//シーンマネージャー描画処理
 
-		SceneMager_Update();
+		SceneManager_Update();
 
 		//画面クリア
 

@@ -80,7 +80,7 @@ void GameOverScene_Update(void)
 void GameOverScene_Draw(void)
 {
 	//ゲームオーバー画像表示
-	DrawGraph(0, 0 GameOverImage, FALSE);
+	DrawGraph(0, 0, GameOverImage, FALSE);
 }
 
 
