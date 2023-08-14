@@ -37,7 +37,7 @@ TitleImage = LoadGraph("images/title.png");
 
 //‰¹Œ¹“Ç‚İ‚İˆ—
 
-TitleBGM = LoadSoundMem("sounds/title_bgm.mp3");
+TitleBGM = LoadSoundMem("sounds/pentakill.wav");
 
 if (TitleImage == D_ERROR)
 {

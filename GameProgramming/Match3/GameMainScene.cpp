@@ -162,7 +162,7 @@ void GameMainScene_Draw(void)
 
 	//フェードアウト状態か？
 
-	if (Get_StageState() == 1)
+	if (Get_StageState() == 0)
 	{
 
 		FadeOutBlock(); //フェードアウト
