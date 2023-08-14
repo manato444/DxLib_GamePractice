@@ -162,7 +162,7 @@ void GameMainScene_Draw(void)
 
 	//フェードアウト状態か？
 
-	if (Get_StageStage() == 1)
+	if (Get_StageState() == 1)
 	{
 
 		FadeOutBlock(); //フェードアウト
@@ -194,7 +194,7 @@ void GameMainScene_Draw(void)
 	} while (tmp_score > 0);
 
 	//制限時間の描画
-	DrawBox(491, 469, 509, 469, - GameTime / 60 * 2, 0x003ff, TRUE);
+	DrawBox(491, 469, 509, 469 - GameTime / 60 * 2, 0x003ff, TRUE);
 
 }
 

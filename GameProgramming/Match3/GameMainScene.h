@@ -6,7 +6,7 @@
 
 //プロトタイプ宣言
 
-int GameMainScene(void);
+int GameMainScene_Initialize(void);
 
 void GameMainScene_Update(void);
 

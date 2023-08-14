@@ -10,7 +10,8 @@ void Input_Initialize(void);
 
 void Input_Update(void);
 
-void Input_Escape(void);
+int Input_Escape(void);
+
 
 int GetOldKey(int key);
 

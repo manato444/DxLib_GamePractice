@@ -132,16 +132,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Appmain(match3).cpp" />
-    <ClCompile Include="AppMain.cpp" />
     <ClCompile Include="FreamControl.cpp" />
     <ClCompile Include="GameClearScene.cpp" />
     <ClCompile Include="GameMainScene.cpp" />
     <ClCompile Include="GameOverScene.cpp" />
-    <ClCompile Include="InoutControl.cpp" />
+    <ClCompile Include="InputControl.cpp" />
     <ClCompile Include="SceneManager.cpp" />
     <ClCompile Include="Stage.cpp" />
     <ClCompile Include="TitleScene.cpp" />
-    <ClCompile Include="ソース.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FreamControl.h" />

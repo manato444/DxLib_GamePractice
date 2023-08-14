@@ -30,7 +30,7 @@ int SceneManager_Initialize(GAME_MODE mode)
 
 	//タイトル画面
 
-	Read_Error = GameMainScene_Initialize();
+	Read_Error = TitleScene_Initialize();
 
 	if (Read_Error == D_ERROR)
 	{
@@ -41,7 +41,7 @@ int SceneManager_Initialize(GAME_MODE mode)
 
 	//ゲームメイン画面
 
-	Read_Error = GameClearScene_Initialize();
+	Read_Error = GameMainScene_Initialize();
 
 	if (Read_Error == D_ERROR)
 	{
@@ -115,7 +115,7 @@ void SceneManager_Update(void)
 		GameClearScene_Update();
 
 	case E_GAME_OVER:
-		GameOverScene_Upadate();
+		GameOverScene_Update();
 		break;
 
 	default:
