@@ -37,7 +37,7 @@ TitleImage = LoadGraph("images/title.png");
 
 //音源読み込み処理
 
-TitleBGM = LoadSoundMem("sounds/pentakill.wav");
+TitleBGM = LoadSoundMem("sounds/title_bgm.mp3");
 
 if (TitleImage == D_ERROR)
 {
@@ -81,8 +81,16 @@ void TitleScene_Update(void)
 		if (GetMousePositionX() > 120 && GetMousePositionX() < 290 && GetMousePositionY() > 260 && GetMousePositionY() < 315)
 		{
 
-			Change_Scene(E_END);
+			Change_Scene(E_GAMEMAIN);
 
+			StopSoundMem(TitleBGM);
+
+		}
+
+		if (GetMousePositionX() > 120 && GetMousePositionX() < 220 && GetMousePositionY() > 345 && GetMousePositionY() < 400)
+		{
+
+			Change_Scene(E_END);
 			StopSoundMem(TitleBGM);
 
 		}
@@ -91,6 +99,8 @@ void TitleScene_Update(void)
 
 
 }
+
+//タイトル画面：描画処理
 
 //引数：なし
 

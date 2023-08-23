@@ -32,7 +32,7 @@ int GameOverScene_Initialize(void)
 	GameOverFlag = FALSE;
 
 	//エラーチェック
-	if (GameOverImage == 1)
+	if (GameOverImage == -1)
 	{
 		ret = -1;
 	}
